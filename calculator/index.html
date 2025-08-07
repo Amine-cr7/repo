@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Savings Calculator - Sacramento Solar Companies</title>
+    <meta name="description" content="Calculate your solar savings in Sacramento with our advanced solar calculator. Get accurate estimates for system size, cost, and payback period.">
+    <meta name="keywords" content="solar calculator sacramento, solar savings calculator, sacramento solar cost, solar panel calculator">
+    <link rel="canonical" href="https://sacramentosolarcompanies.com/calculator/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Solar Savings Calculator - Sacramento Solar Companies">
+    <meta property="og:description" content="Calculate your solar savings in Sacramento with our advanced solar calculator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sacramentosolarcompanies.com/calculator/">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" class="logo">
+                        <img src="/images/logo.svg" alt="Sacramento Solar Companies" width="240" height="60">
+                    </a>
+                </div>
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar-contact">
+                    <a href="tel:+1-916-555-0123" class="phone-btn">(916) 555-0123</a>
+                    <a href="/#quote-form" class="cta-btn">Get Free Quote</a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/companies/">Companies</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/guide/">Guides</a></li>
+                        <li><a href="/calculator/" class="active">Calculator</a></li>
+                        <li><a href="/comparison/solar-companies-sacramento/">Compare</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="calculator-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Sacramento Solar Calculator</h1>
+                <p class="hero-subtitle">Calculate your solar savings with our advanced calculator designed specifically for Sacramento residents. Get accurate estimates using current SMUD rates and local solar data.</p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <span class="feature-icon">💰</span>
+                        <span>Accurate Savings</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">⚡</span>
+                        <span>SMUD Rates</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🏠</span>
+                        <span>Local Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="advanced-calculator">
+        <div class="container">
+            <div class="calculator-layout">
+                <!-- Input Form -->
+                <div class="calculator-inputs">
+                    <h2>Enter Your Information</h2>
+                    
+                    <div class="input-section">
+                        <h3>📍 Location Details</h3>
+                        <div class="form-group">
+                            <label for="address">Sacramento Address</label>
+                            <input type="text" id="address" placeholder="Enter your address for accurate sun exposure">
+                        </div>
+                        <div class="form-group">
+                            <label for="zip-code">ZIP Code</label>
+                            <input type="text" id="zip-code" placeholder="95814">
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <h3>⚡ Energy Usage</h3>
+                        <div class="form-group">
+                            <label for="monthly-bill">Monthly Electric Bill ($)</label>
+                            <input type="number" id="monthly-bill" placeholder="150" min="0">
+                            <small>Average SMUD bill for Sacramento homes</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="annual-kwh">Annual kWh Usage (optional)</label>
+                            <input type="number" id="annual-kwh" placeholder="8,000" min="0">
+                            <small>Found on your SMUD bill statement</small>
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <h3>🏠 Property Details</h3>
+                        <div class="form-group">
+                            <label for="roof-size">Available Roof Space (sq ft)</label>
+                            <input type="number" id="roof-size" placeholder="1000" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="roof-direction">Primary Roof Direction</label>
+                            <select id="roof-direction">
+                                <option value="south">South (Best)</option>
+                                <option value="southwest">Southwest</option>
+                                <option value="southeast">Southeast</option>
+                                <option value="west">West</option>
+                                <option value="east">East</option>
+                                <option value="north">North</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="roof-tilt">Roof Tilt</label>
+                            <select id="roof-tilt">
+                                <option value="flat">Flat (0-5°)</option>
+                                <option value="low">Low Slope (5-15°)</option>
+                                <option value="medium">Medium Slope (15-30°)</option>
+                                <option value="steep">Steep Slope (30°+)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="shading">Shading Level</label>
+                            <select id="shading">
+                                <option value="none">No Shading</option>
+                                <option value="minimal">Minimal Shading</option>
+                                <option value="moderate">Moderate Shading</option>
+                                <option value="heavy">Heavy Shading</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <h3>💵 Financial Preferences</h3>
+                        <div class="form-group">
+                            <label for="payment-method">Payment Method</label>
+                            <select id="payment-method">
+                                <option value="cash">Cash Purchase</option>
+                                <option value="loan">Solar Loan</option>
+                                <option value="lease">Solar Lease</option>
+                                <option value="ppa">Power Purchase Agreement (PPA)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" id="loan-term-group" style="display: none;">
+                            <label for="loan-term">Loan Term (years)</label>
+                            <select id="loan-term">
+                                <option value="10">10 years</option>
+                                <option value="15">15 years</option>
+                                <option value="20" selected>20 years</option>
+                                <option value="25">25 years</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-large" onclick="calculateAdvancedSavings()">
+                        Calculate My Solar Savings
+                    </button>
+                </div>
+
+                <!-- Results Display -->
+                <div class="calculator-results" id="calculator-results">
+                    <div class="results-header">
+                        <h2>Your Solar Analysis</h2>
+                        <p>Get detailed insights into your solar potential</p>
+                    </div>
+
+                    <div class="results-grid" id="results-content">
+                        <div class="result-card">
+                            <h3>📋 System Specifications</h3>
+                            <div class="result-item">
+                                <span class="label">Recommended System Size:</span>
+                                <span class="value" id="system-size">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Number of Panels:</span>
+                                <span class="value" id="panel-count">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Annual Energy Production:</span>
+                                <span class="value" id="annual-production">-</span>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>💰 Financial Analysis</h3>
+                            <div class="result-item">
+                                <span class="label">System Cost (before incentives):</span>
+                                <span class="value" id="system-cost">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Federal Tax Credit (30%):</span>
+                                <span class="value" id="tax-credit">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Net Cost After Incentives:</span>
+                                <span class="value highlight" id="net-cost">-</span>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>📈 Savings Breakdown</h3>
+                            <div class="result-item">
+                                <span class="label">Monthly Savings:</span>
+                                <span class="value" id="monthly-savings">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Annual Savings:</span>
+                                <span class="value" id="annual-savings">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">25-Year Savings:</span>
+                                <span class="value highlight" id="lifetime-savings">-</span>
+                            </div>
+                        </div>
+
+                        <div class="result-card">
+                            <h3>⏱️ Payback Analysis</h3>
+                            <div class="result-item">
+                                <span class="label">Payback Period:</span>
+                                <span class="value" id="payback-period">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">Break-even Year:</span>
+                                <span class="value" id="breakeven-year">-</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="label">ROI After 25 Years:</span>
+                                <span class="value" id="roi">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="results-actions">
+                        <a href="/#quote-form" class="btn btn-primary btn-large">Get Free Quotes</a>
+                        <button type="button" class="btn btn-secondary" onclick="printResults()">Print Results</button>
+                        <button type="button" class="btn btn-outline" onclick="resetCalculator()">Reset Calculator</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="calculator-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌞 Sacramento Solar Potential</h3>
+                    <p>Sacramento receives over 300 days of sunshine annually, making it one of the best cities in California for solar energy production.</p>
+                    <ul>
+                        <li>Average 5.5 peak sun hours daily</li>
+                        <li>Excellent year-round solar irradiance</li>
+                        <li>Minimal weather-related downtime</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>💡 SMUD Net Metering</h3>
+                    <p>Sacramento Municipal Utility District (SMUD) offers net energy metering, allowing you to sell excess solar power back to the grid.</p>
+                    <ul>
+                        <li>1:1 credit for excess energy produced</li>
+                        <li>Monthly true-up of energy usage</li>
+                        <li>Interconnection support included</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🏛️ Available Incentives</h3>
+                    <p>Take advantage of federal, state, and local incentives to reduce your solar installation costs.</p>
+                    <ul>
+                        <li>30% Federal Solar Tax Credit</li>
+                        <li>California Solar Initiative rebates</li>
+                        <li>SMUD solar programs and rebates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sacramento Solar Companies</h3>
+                    <p>Your trusted resource for finding the best solar companies in Sacramento, CA. Compare prices, read reviews, and get free quotes from top-rated solar installers.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/companies/">Solar Companies</a></li>
+                        <li><a href="/blog/">Solar Blog</a></li>
+                        <li><a href="/guide/solar-cost-sacramento-2025/">Solar Cost Guide</a></li>
+                        <li><a href="/calculator/">Savings Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Local Areas</h4>
+                    <ul>
+                        <li><a href="/areas/downtown-sacramento-solar/">Downtown Sacramento</a></li>
+                        <li><a href="/areas/midtown-sacramento-solar/">Midtown Sacramento</a></li>
+                        <li><a href="/areas/elk-grove-solar-companies/">Elk Grove</a></li>
+                        <li><a href="/areas/folsom-solar-installers/">Folsom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: (916) 555-0123</p>
+                    <p>Email: info@sacramentosolarcompanies.com</p>
+                    <p>Address: Sacramento, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sacramento Solar Companies. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                    <a href="/sitemap.xml/">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/advanced-calculator.js"></script>
+</body>
+</html>

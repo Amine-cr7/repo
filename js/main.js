@@ -2,6 +2,15 @@
 // Handles navigation, forms, and interactive features
 
 // Mobile navigation toggle
+function toggleMobileMenu() {
+    const navbarMenu = document.querySelector('.navbar-menu');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    
+    navbarMenu.classList.toggle('active');
+    mobileToggle.classList.toggle('active');
+}
+
+// Mobile navigation toggle (legacy support)
 function initMobileNav() {
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const navLinks = document.querySelector('.nav-links');
