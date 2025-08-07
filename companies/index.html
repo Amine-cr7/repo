@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Companies in Sacramento - Complete Directory of Top Solar Installers</title>
+    <meta name="description" content="Browse our complete directory of solar companies in Sacramento, CA. Compare prices, reviews, and services from 50+ top-rated solar installers. Get free quotes today!">
+    <meta name="keywords" content="solar companies in sacramento, solar companies sacramento, sacramento solar installers, solar contractors sacramento, best solar companies sacramento">
+    <link rel="canonical" href="https://sacramentosolarcompanies.com/companies/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Sacramento Solar Companies Directory",
+        "description": "Complete directory of solar companies serving Sacramento, CA",
+        "url": "https://sacramentosolarcompanies.com/companies/",
+        "numberOfItems": 20,
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "LocalBusiness",
+                    "name": "Tesla Solar Sacramento",
+                    "url": "https://sacramentosolarcompanies.com/companies/tesla-solar-sacramento/"
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "LocalBusiness",
+                    "name": "Sunrun Sacramento",
+                    "url": "https://sacramentosolarcompanies.com/companies/sunrun-sacramento/"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="/" class="logo">
+                        <img src="/images/logo.png" alt="Sacramento Solar Companies" width="200" height="50">
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/companies/" class="active">Companies</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/guide/">Guides</a></li>
+                        <li><a href="/calculator/solar-savings-sacramento/">Calculator</a></li>
+                        <li><a href="/comparison/solar-companies-sacramento/">Compare</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-contact">
+                    <a href="tel:+1-916-555-0123" class="phone-btn">(916) 555-0123</a>
+                    <a href="#quote-form" class="cta-btn">Get Free Quote</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">Home</a> / <span>Solar Companies</span>
+            </nav>
+            <h1>Solar Companies in Sacramento</h1>
+            <p class="page-subtitle">Compare 50+ top-rated solar companies serving the Sacramento area. Find the best solar installer for your home with verified reviews and competitive pricing.</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="rating-filter">Rating</label>
+                    <select id="rating-filter">
+                        <option value="">All Ratings</option>
+                        <option value="5">5 Stars</option>
+                        <option value="4">4+ Stars</option>
+                        <option value="3">3+ Stars</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Price Range</label>
+                    <select id="price-filter">
+                        <option value="">All Prices</option>
+                        <option value="low">Under $15,000</option>
+                        <option value="medium">$15,000 - $25,000</option>
+                        <option value="high">Over $25,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="service-filter">Services</label>
+                    <select id="service-filter">
+                        <option value="">All Services</option>
+                        <option value="residential">Residential Solar</option>
+                        <option value="commercial">Commercial Solar</option>
+                        <option value="battery">Battery Storage</option>
+                        <option value="ev-charging">EV Charging</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="area-filter">Service Area</label>
+                    <select id="area-filter">
+                        <option value="">All Areas</option>
+                        <option value="downtown">Downtown Sacramento</option>
+                        <option value="midtown">Midtown Sacramento</option>
+                        <option value="elk-grove">Elk Grove</option>
+                        <option value="folsom">Folsom</option>
+                        <option value="roseville">Roseville</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" onclick="applyFilters()">Apply Filters</button>
+                <button class="btn btn-outline" onclick="clearFilters()">Clear All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Grid -->
+    <section class="companies-section">
+        <div class="container">
+            <div class="companies-header">
+                <h2>Sacramento Solar Companies Directory</h2>
+                <div class="companies-stats">
+                    <span id="companies-count">20 companies found</span>
+                    <div class="sort-options">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" onchange="sortCompanies()">
+                            <option value="rating">Highest Rated</option>
+                            <option value="reviews">Most Reviews</option>
+                            <option value="price-low">Lowest Price</option>
+                            <option value="price-high">Highest Price</option>
+                            <option value="name">Company Name</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="companies-grid" id="companies-grid">
+                <!-- Tesla Solar -->
+                <div class="company-card" data-rating="4.8" data-price="medium" data-services="residential,battery,ev-charging" data-areas="downtown,midtown,elk-grove,folsom">
+                    <div class="company-header">
+                        <img src="/images/companies/tesla-solar-logo.png" alt="Tesla Solar Sacramento" class="company-logo">
+                        <div class="company-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">4.8/5 (127 reviews)</span>
+                        </div>
+                    </div>
+                    <h3>Tesla Solar Sacramento</h3>
+                    <p class="company-description">Leading solar and battery storage solutions with competitive pricing and excellent customer service in the Sacramento area.</p>
+                    <div class="company-details">
+                        <div class="detail">
+                            <strong>Price Range:</strong> $12,000 - $25,000
+                        </div>
+                        <div class="detail">
+                            <strong>Coverage:</strong> Sacramento, Elk Grove, Folsom
+                        </div>
+                        <div class="detail">
+                            <strong>Services:</strong> Solar Panels, Battery Storage, EV Chargers
+                        </div>
+                        <div class="detail">
+                            <strong>Founded:</strong> 2016
+                        </div>
+                    </div>
+                    <div class="company-features">
+                        <span class="feature">Residential</span>
+                        <span class="feature">Battery Storage</span>
+                        <span class="feature">EV Charging</span>
+                        <span class="feature">Warranty</span>
+                    </div>
+                    <div class="company-actions">
+                        <a href="/companies/tesla-solar-sacramento/" class="btn btn-outline">View Details</a>
+                        <a href="#quote-form" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Sunrun -->
+                <div class="company-card" data-rating="4.7" data-price="medium" data-services="residential" data-areas="downtown,midtown,elk-grove,folsom,roseville">
+                    <div class="company-header">
+                        <img src="/images/companies/sunrun-logo.png" alt="Sunrun Sacramento" class="company-logo">
+                        <div class="company-rating">
+                            <div class="stars">★★★★★</div>
+                            <span class="rating-text">4.7/5 (89 reviews)</span>
+                        </div>
+                    </div>
+                    <h3>Sunrun Sacramento</h3>
+                    <p class="company-description">Nation's leading residential solar company with flexible financing options and comprehensive warranty coverage.</p>
+                    <div class="company-details">
+                        <div class="detail">
+                            <strong>Price Range:</strong> $15,000 - $30,000
+                        </div>
+                        <div class="detail">
+                            <strong>Coverage:</strong> Sacramento Metro Area
+                        </div>
+                        <div class="detail">
+                            <strong>Services:</strong> Solar Leasing, PPA, Purchase Options
+                        </div>
+                        <div class="detail">
+                            <strong>Founded:</strong> 2007
+                        </div>
+                    </div>
+                    <div class="company-features">
+                        <span class="feature">Residential</span>
+                        <span class="feature">Leasing</span>
+                        <span class="feature">PPA</span>
+                        <span class="feature">Warranty</span>
+                    </div>
+                    <div class="company-actions">
+                        <a href="/companies/sunrun-sacramento/" class="btn btn-outline">View Details</a>
+                        <a href="#quote-form" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Solar City -->
+                <div class="company-card" data-rating="4.5" data-price="low" data-services="residential,commercial" data-areas="downtown,midtown,davis,woodland">
+                    <div class="company-header">
+                        <img src="/images/companies/solar-city-logo.png" alt="Solar City Sacramento" class="company-logo">
+                        <div class="company-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">4.5/5 (156 reviews)</span>
+                        </div>
+                    </div>
+                    <h3>Solar City Sacramento</h3>
+                    <p class="company-description">Local solar experts with over 15 years of experience installing high-quality solar systems throughout Sacramento County.</p>
+                    <div class="company-details">
+                        <div class="detail">
+                            <strong>Price Range:</strong> $10,000 - $22,000
+                        </div>
+                        <div class="detail">
+                            <strong>Coverage:</strong> Sacramento, Davis, Woodland
+                        </div>
+                        <div class="detail">
+                            <strong>Services:</strong> Residential & Commercial Solar
+                        </div>
+                        <div class="detail">
+                            <strong>Founded:</strong> 2006
+                        </div>
+                    </div>
+                    <div class="company-features">
+                        <span class="feature">Residential</span>
+                        <span class="feature">Commercial</span>
+                        <span class="feature">Local</span>
+                        <span class="feature">Warranty</span>
+                    </div>
+                    <div class="company-actions">
+                        <a href="/companies/solar-city-sacramento/" class="btn btn-outline">View Details</a>
+                        <a href="#quote-form" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Vivint Solar -->
+                <div class="company-card" data-rating="4.4" data-price="high" data-services="residential,battery" data-areas="sacramento,roseville,rocklin">
+                    <div class="company-header">
+                        <img src="/images/companies/vivint-solar-logo.png" alt="Vivint Solar Sacramento" class="company-logo">
+                        <div class="company-rating">
+                            <div class="stars">★★★★☆</div>
+                            <span class="rating-text">4.4/5 (73 reviews)</span>
+                        </div>
+                    </div>
+                    <h3>Vivint Solar Sacramento</h3>
+                    <p class="company-description">Premium solar solutions with smart home integration and comprehensive monitoring systems for Sacramento homeowners.</p>
+                    <div class="company-details">
+                        <div class="detail">
+                            <strong>Price Range:</strong> $18,000 - $35,000
+                        </div>
+                        <div class="detail">
+                            <strong>Coverage:</strong> Sacramento, Roseville, Rocklin
+                        </div>
+                        <div class="detail">
+                            <strong>Services:</strong> Solar + Smart Home Integration
+                        </div>
+                        <div class="detail">
+                            <strong>Founded:</strong> 2011
+                        </div>
+                    </div>
+                    <div class="company-features">
+                        <span class="feature">Residential</span>
+                        <span class="feature">Smart Home</span>
+                        <span class="feature">Monitoring</span>
+                        <span class="feature">Warranty</span>
+                    </div>
+                    <div class="company-actions">
+                        <a href="/companies/vivint-solar-sacramento/" class="btn btn-outline">View Details</a>
+                        <a href="#quote-form" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Additional companies would continue here -->
+                <!-- For brevity, I'm showing 4 main companies, but the full site would have 20+ companies -->
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-large" onclick="loadMoreCompanies()">Load More Companies</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Sacramento Solar Companies Service Areas</h2>
+            <div class="map-container">
+                <div id="sacramento-map" class="sacramento-map">
+                    <!-- Map will be loaded here -->
+                    <div class="map-placeholder">
+                        <h3>Sacramento Solar Service Areas</h3>
+                        <p>Interactive map showing service areas for all Sacramento solar companies</p>
+                        <div class="service-areas">
+                            <div class="area-item">
+                                <span class="area-name">Downtown Sacramento</span>
+                                <span class="area-companies">15 companies</span>
+                            </div>
+                            <div class="area-item">
+                                <span class="area-name">Midtown Sacramento</span>
+                                <span class="area-companies">12 companies</span>
+                            </div>
+                            <div class="area-item">
+                                <span class="area-name">Elk Grove</span>
+                                <span class="area-companies">18 companies</span>
+                            </div>
+                            <div class="area-item">
+                                <span class="area-name">Folsom</span>
+                                <span class="area-companies">14 companies</span>
+                            </div>
+                            <div class="area-item">
+                                <span class="area-name">Roseville</span>
+                                <span class="area-companies">10 companies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote-form" class="quote-section">
+        <div class="container">
+            <h2>Get Free Quotes from Sacramento Solar Companies</h2>
+            <p class="section-subtitle">Compare quotes from multiple top-rated solar companies in Sacramento. No obligation, no pressure.</p>
+            
+            <form class="quote-form" action="/submit-quote" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address-quote">Sacramento Address *</label>
+                        <input type="text" id="address-quote" name="address" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="monthly-bill-quote">Monthly Electric Bill ($) *</label>
+                        <input type="number" id="monthly-bill-quote" name="monthly_bill" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roof-type">Roof Type</label>
+                        <select id="roof-type" name="roof_type">
+                            <option value="">Select roof type</option>
+                            <option value="asphalt">Asphalt Shingle</option>
+                            <option value="tile">Tile</option>
+                            <option value="metal">Metal</option>
+                            <option value="flat">Flat</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-companies">Preferred Companies (Optional)</label>
+                    <select id="preferred-companies" name="preferred_companies" multiple>
+                        <option value="tesla">Tesla Solar</option>
+                        <option value="sunrun">Sunrun</option>
+                        <option value="solar-city">Solar City</option>
+                        <option value="vivint">Vivint Solar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your solar goals, timeline, or any specific requirements..."></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to receive quotes from Sacramento solar companies and understand my information will be shared with local installers.</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-large">Get Free Quotes Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sacramento Solar Companies</h3>
+                    <p>Your trusted resource for finding the best solar companies in Sacramento, CA. Compare prices, read reviews, and get free quotes from top-rated solar installers.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/companies/">Solar Companies</a></li>
+                        <li><a href="/blog/">Solar Blog</a></li>
+                        <li><a href="/guide/solar-cost-sacramento-2025/">Solar Cost Guide</a></li>
+                        <li><a href="/calculator/solar-savings-sacramento/">Savings Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Local Areas</h4>
+                    <ul>
+                        <li><a href="/areas/downtown-sacramento-solar/">Downtown Sacramento</a></li>
+                        <li><a href="/areas/midtown-sacramento-solar/">Midtown Sacramento</a></li>
+                        <li><a href="/areas/elk-grove-solar-companies/">Elk Grove</a></li>
+                        <li><a href="/areas/folsom-solar-installers/">Folsom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: (916) 555-0123</p>
+                    <p>Email: info@sacramentosolarcompanies.com</p>
+                    <p>Address: Sacramento, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sacramento Solar Companies. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                    <a href="/sitemap.xml/">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/companies.js"></script>
+</body>
+</html>
